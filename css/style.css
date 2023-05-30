@@ -56,6 +56,9 @@ body.active {
 .title span {
   color: #2E63CD;
 }
+.title-desc {
+  margin-bottom: 40px;
+}
 
 /* ======= Style.css ======= */
 header {
@@ -164,14 +167,10 @@ nav a:hover {
   width: 1300px;
   margin: auto;
 }
-.common-top {}
-.title {}
-.title-desc {}
 .level-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
 }
 .level-con {
   width: 150px;
@@ -211,4 +210,82 @@ nav a:hover {
   font-family: xeicon;
   font-size: 42px;
   color: #4e6af7;
+}
+
+/* ======= Section: recent ======= */
+.recent {}
+.recent-inner {
+  width: 1300px;
+  margin: auto;
+}
+.recent-contents {
+  display: flex;
+}
+.recent-con img {
+  width: 300px;
+  height: 200px;
+}
+.recent-con img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.recent-desc {
+}
+.recent-desc > h2 {
+  float: left;
+  margin: 0px 5px 0 20px;
+  color: #4e6af7;
+  width: 10%;
+  font-weight: bold;
+  font-size: 42px;
+}
+.recent-desc > p {
+  width: 90%;
+}
+
+/* ======= Section: popular ======= */
+.popular {
+  background-color: #F4F5FA;
+  height: 600px;
+  padding: 20px;
+}
+.popular-inner {
+  width: 1300px;
+  margin: auto;
+}
+.popular-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular-con {
+  position: relative;
+  margin-right: 20px;
+}
+.popular-con:hover {
+  cursor: pointer;
+}
+.popular-top {
+  width: 300px;
+  height: 250px;
+}
+.popular-top > img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.popular-bottom {
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  background-color: #eee;
+}
+.popular-bottom > h2 {
+  color: #4E6AF7;
+  padding: 10px 0 0 0;
+}
+.popular-bottom > span {
+  font-size: 14px;
+  line-height: 1em;
 }
