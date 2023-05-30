@@ -1,0 +1,214 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* XEION CDN */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Web Fonts - Noto+Sans+KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Web Fonts - Black+Han+Sans */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+/* ======= Reset.css ======= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+button, input {
+  outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+/* ======= Default.css ======= */
+html {
+  scroll-behavior: smooth;
+}
+body:not(.eng) {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.7em;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+}
+body.active {
+  overflow: hidden;
+}
+
+/* ======= Common.css ======= */
+.common-top {
+  text-align: center;
+  margin: 50px;
+}
+.title {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 36px;
+}
+.title span {
+  color: #2E63CD;
+}
+
+/* ======= Style.css ======= */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+}
+.header-inner {
+  width: 1300px;
+  margin: auto;
+  text-align: center;
+}
+.logo img {
+  width: 200px;
+}
+.logo {
+  margin-top: 5px;
+}
+nav {}
+nav a {
+  margin-right: 20px;
+  transition: .2s;
+}
+nav a:hover {
+  font-weight: 400;
+  color: #2E63CD;
+}
+
+/* ======= Section: Welcome ======= */
+.welcome {
+  width: 100%;
+  height: 100vh;
+}
+.main-img {
+  position: relative;
+}
+.main-img img {
+  position: absolute;
+  width: 100%;
+}
+
+/* ======= Section: learn ======= */
+.learn {
+  height: 500px;
+}
+.learn-inner {
+  width: 1300px;
+  margin: auto;
+}
+.learn-contents  {
+  display: table;
+  overflow: hidden;
+}
+.learn-con {
+  display: table-cell;
+  transition: .5s;
+  cursor: pointer;
+}
+.learn-con:hover {
+  transform: scale(1.1);
+}
+.learn-img {
+  position: relative;
+  width: 400px;
+  height: 250px;
+}
+.learn-img::before {
+  content: '';
+  position: absolute;
+  background-color: #222222a8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.learn-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: top;
+}
+.learn-desc {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 20px;
+}
+.learn-desc p {
+  font-size: 14px;
+  width: 75%;
+}
+.learn-desc span::after {
+  content: "\e907";
+  font-family: xeicon;
+}
+
+/* ======= Section: level ======= */
+.level {
+  background-color: #F4F5FA;
+  height: 350px;
+  padding: 10px;
+}
+.level-inner {
+  width: 1300px;
+  margin: auto;
+}
+.common-top {}
+.title {}
+.title-desc {}
+.level-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.level-con {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ccd3f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.level-con p {
+  margin-top: 8px;
+}
+.level1::before {
+  content: "\e9b4";
+}
+.level2::before {
+  content: "\eb57";
+}
+.level3::before {
+  content: "\e9c3";
+}
+.level4::before {
+  content: "\ea60";
+}
+.level5::before {
+  content: "\ea14";
+}
+.level1::before,
+.level2::before,
+.level3::before,
+.level4::before,
+.level5::before {
+  font-family: xeicon;
+  font-size: 42px;
+  color: #4e6af7;
+}

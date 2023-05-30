@@ -1,0 +1,27 @@
+header
+  .header-inner
+    .header-top
+      .logo > img
+    .header-bottom
+      .gnb > (a * 5)
+
+section.welcome
+  .main-img > img
+
+section.learn
+  .learn-inner
+    .common-top
+      .title
+      .title-desc
+    .learn-contents
+      .learn-con
+        .learn-img > img
+        .learn-desc > p, span
+
+section.level
+  .level-inner
+    .common-top
+      .title
+      .title-desc
+    .level-icons
+      .level-con > i, p
