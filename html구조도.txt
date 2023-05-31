@@ -63,3 +63,12 @@ section.recommend
     .recommend-contents
       .recommend-list > (a*9)
       .recommend-con > img
+
+footer
+  .footer-inner
+    .footer-logo > img
+    .footer-desc
+      .explore > (a*7)
+      p
+      .sns
+      a

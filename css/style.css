@@ -47,7 +47,6 @@ body.active {
 /* ======= Common.css ======= */
 .common-top {
   text-align: center;
-  margin: 50px;
 }
 .title {
   font-family: 'Black Han Sans', sans-serif;
@@ -59,6 +58,9 @@ body.active {
 .title-desc {
   margin-bottom: 40px;
 }
+section {
+  margin-bottom: 100px;
+}
 
 /* ======= Style.css ======= */
 header {
@@ -67,6 +69,9 @@ header {
   background-color: #fff;
   position: fixed;
   z-index: 1;
+}
+header.active {
+  box-shadow: 5px 5px 10px rgba(3, 26, 35, 0.239);
 }
 .header-inner {
   width: 1300px;
@@ -80,7 +85,6 @@ header {
 .logo {
   margin-top: 5px;
 }
-nav {}
 nav a {
   margin-right: 20px;
   transition: .2s;
@@ -110,7 +114,8 @@ nav a:hover {
 
 /* ======= Section: learn ======= */
 .learn {
-  height: 500px;
+  height: 450px;
+  padding: 50px;
 }
 .learn-inner {
   width: 1300px;
@@ -167,7 +172,7 @@ nav a:hover {
 .level {
   background-color: #F4F5FA;
   height: 350px;
-  padding: 10px;
+  padding: 50px;
 }
 .level-inner {
   width: 1300px;
@@ -219,13 +224,18 @@ nav a:hover {
 }
 
 /* ======= Section: recent ======= */
-.recent {}
+.recent {
+  height: 500px;
+  padding: 50px;
+}
 .recent-inner {
   width: 1300px;
   margin: auto;
 }
 .recent-contents {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .recent-con img {
   width: 300px;
@@ -254,8 +264,8 @@ nav a:hover {
 /* ======= Section: popular ======= */
 .popular {
   background-color: #F4F5FA;
-  height: 600px;
-  padding: 20px;
+  height: 650px;
+  padding: 50px;
 }
 .popular-inner {
   width: 1300px;
@@ -302,7 +312,8 @@ nav a:hover {
 
 /* ======= Section: youtube ======= */
 .youtube {
-  height: 600px;
+  height: 700px;
+  padding: 50px;
 }
 .youtube-inner {
   width: 1300px;
@@ -313,8 +324,6 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-.youtube-left {}
-.youtube-left > iframe {}
 .youtube-right {
   margin-left: 40px;
 }
@@ -322,7 +331,8 @@ nav a:hover {
 
 /* ======= Section: youtube ======= */
 .recommend {
-  height: 600px;
+  height: 650px;
+  padding: 50px;
 }
 .recommend-inner {
   width: 1300px;
@@ -333,28 +343,33 @@ nav a:hover {
   align-items: center;
 }
 .recommend-list {
-  width: 100%;
+  width: 40%;
   margin-left: 100px;
 }
 .recommend-list > div {
   cursor: pointer;
+  margin-bottom: 5px;
 }
 .recommend-list > div.active {
   font-weight: bold;
-  color: #4E6AF7;
+  background-color: rgb(169, 217, 236);
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
   border-radius: 8px;
+  display: inline-block;
 }
 .recommend-contents {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  width: 800px;
+  width: 900px;
   height: 500px;
   background-color: #F4F5FA;
 }
 .recommend-right {
-  margin-left: 50px;
+  margin-left: 100px;
   background-color: #F4F5FA;
 }
 .recommend-con {
@@ -367,17 +382,62 @@ nav a:hover {
   width: 200px;
 }
 .recommend-con > p {
-  width: 80%;
+  width: 90%;
   padding-bottom: 20px;
 }
 .recommend-con a {
   font-weight: 300;
 }
 .recommend-con a:hover {
-  text-decoration: underline;
   background-color: skyblue;
   border-radius: 5px;
   padding: 3px;
   color: #eee;
   font-weight: bold;
+}
+
+/* ======= Section: footer ======= */
+footer {
+  text-align: center;
+  height: 150px;
+  padding: 30px;
+  background-color: #dee3fb;
+}
+.footer-inner {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+}
+.footer-desc {
+  margin-left: 100px;
+}
+.footer-logo img {
+  margin-top: 20px;
+  width: 300px;
+}
+.exolore > a::after {
+  content: ' | ';
+  color: #bbb;
+}
+.exolore > a:hover {
+  color: #2E63CD;
+}
+.exolore > a:last-child::after {
+  content: '';
+}
+.links:hover {
+  text-decoration: underline;
+}
+.sns {
+  margin-left: 100px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.sns > a:hover {
+  color: #2E63CD;
+}
+.sns > h4 {
+  color: #2E63CD;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
 }
