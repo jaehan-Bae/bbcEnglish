@@ -47,6 +47,9 @@ section.popular
 
 section.youtube
   .youtube-inner
+    .common-top
+      .title
+      .title-desc
     .youtube-contents
       .youtube-left > iframe
       .youtube-right
@@ -54,6 +57,9 @@ section.youtube
 
 section.recommend
   .recommend-inner
+    .common-top
+      .title
+      .title-desc
     .recommend-contents
       .recommend-list > (a*9)
       .recommend-con > img
