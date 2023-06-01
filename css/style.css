@@ -445,6 +445,30 @@ footer {
   margin-bottom: 5px;
 }
 
+/* ======= Section: footer ======= */
+.goto {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #2E63CD;
+  display: none;
+}
+.goto::after {
+  content: "\e915";
+  color: #fff;
+  font-family: xeicon;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.goto.active {
+  display: block;
+}
+
 /* ▦▦▦▦▦▦▦▦▦ Scroll Reveal CSS Animation ▦▦▦▦▦▦▦▦▦ */
 .ltr {
   animation: ltr 0.5s linear both;
