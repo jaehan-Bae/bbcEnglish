@@ -8,6 +8,14 @@ $(function () {
     }
   });
 
+  /* Wow Scroll Reveal Animation */
+  wow = new WOW({
+    boxClass: 'wow',
+    offset: 150,
+    mobile: true
+  })
+  wow.init()
+
   /* recommend tab-menu */
   $('.recommend-list > div').click(function () {
     $(this).addClass('active');
@@ -17,13 +25,6 @@ $(function () {
     $('#' + $(this).attr('data-alt')).addClass('active');
   });
 
-  /* Wow Scroll Reveal Animation */
-  wow = new WOW({
-    boxClass: 'wow',
-    offset: 150,
-    mobile: true
-  })
-  wow.init()
 });
 
 
