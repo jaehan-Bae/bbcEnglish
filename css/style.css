@@ -32,6 +32,7 @@ html {
   scroll-behavior: smooth;
 }
 body:not(.eng) {
+  overflow-x: hidden;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 200;
   font-size: 18px;
@@ -110,13 +111,13 @@ nav a:hover {
 .main-img {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 .main-img img {
   position: absolute;
   width: inherit;
   height: inherit;
-  object-fit: cover;
+  object-fit: contain;
   object-position: bottom;
 }
 
