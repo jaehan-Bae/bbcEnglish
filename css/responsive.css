@@ -37,6 +37,7 @@
     top: 15px;
     left: 20px;
     font-size: 28px;
+    z-index: 10000;
   }
   .trigger::before {
     content: '\e91c';

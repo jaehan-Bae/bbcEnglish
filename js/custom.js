@@ -29,7 +29,11 @@ $(function () {
   $('.trigger').click(function() {
     $(this).toggleClass('active');
     $('nav').toggleClass('active');
-  })
+
+    $('section, .nav a').click(function() {
+      $('.trigger, nav').removeClass('active');
+    });
+  });
 
 });
 
