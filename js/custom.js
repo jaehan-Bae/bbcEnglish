@@ -25,6 +25,12 @@ $(function () {
     $('#' + $(this).attr('data-alt')).addClass('active');
   });
 
+  // trigger
+  $('.trigger').click(function() {
+    $(this).toggleClass('active');
+    $('nav').toggleClass('active');
+  })
+
 });
 
 
