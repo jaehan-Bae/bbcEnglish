@@ -90,6 +90,7 @@ nav {
   background-color: #2E63CD;
   text-align: center;
   padding: 2px;
+  width: 100%;
 }
 nav a {
   margin-right: 20px;
@@ -104,12 +105,12 @@ nav a:hover {
 /* ======= Section: Welcome ======= */
 .welcome {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .main-img {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .main-img img {
   position: absolute;
@@ -346,7 +347,7 @@ nav a:hover {
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: cenDter;
+  justify-content: center;
   align-items: center;
 }
 .recommend-list {

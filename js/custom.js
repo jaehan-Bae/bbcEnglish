@@ -16,6 +16,18 @@ $(function () {
   })
   wow.init()
 
+    /* Slick Slider - Welcome */
+  $('.main-img').slick({
+    infinite: true,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    fade: true,
+    speed: 1000,
+    pauseOnHover: false
+  });
+
+
   /* recommend tab-menu */
   $('.recommend-list > div').click(function () {
     $(this).addClass('active');
