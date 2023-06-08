@@ -1,4 +1,7 @@
 @media (max-width:480px) {
+  body {
+    overflow-x: hidden;
+  }
   .welcome, .learn, .level, .about, .popular, .recent, .popular, .youtube, .recommend, footer {
     height: auto;
   }
@@ -31,6 +34,9 @@
   }
   nav > a {
     display: block;
+  }
+  nav > a:first-child {
+    padding-top: 50px;
   }
   .trigger {
     position: absolute;

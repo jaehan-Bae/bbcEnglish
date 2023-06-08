@@ -16,6 +16,16 @@ $(function () {
   })
   wow.init()
 
+  // trigger
+  $('.trigger').click(function() {
+    $(this).toggleClass('active');
+    $('nav').toggleClass('active');
+
+    $('section, .nav a').click(function() {
+      $('.trigger, nav').removeClass('active');
+    });
+  });
+
     /* Slick Slider - Welcome */
   $('.main-img').slick({
     infinite: true,
@@ -27,7 +37,6 @@ $(function () {
     pauseOnHover: false
   });
 
-
   /* recommend tab-menu */
   $('.recommend-list > div').click(function () {
     $(this).addClass('active');
@@ -36,17 +45,6 @@ $(function () {
     $('.recommend-con').removeClass('active');
     $('#' + $(this).attr('data-alt')).addClass('active');
   });
-
-  // trigger
-  $('.trigger').click(function() {
-    $(this).toggleClass('active');
-    $('nav').toggleClass('active');
-
-    $('section, .nav a').click(function() {
-      $('.trigger, nav').removeClass('active');
-    });
-  });
-
 });
 
 
